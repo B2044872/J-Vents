@@ -1,0 +1,7 @@
+package jvents
+
+class Genre {
+
+    static constraints = {
+    }
+}
