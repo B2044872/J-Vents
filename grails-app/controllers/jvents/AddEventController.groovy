@@ -5,8 +5,9 @@ class AddEventController {
     def index() { 
     println(params)
     def new_event = new Event (eventName:params.eventName,
-                               eventGenre:params.eventGenre,
-			       eventVenue:params.eventVenue
+                               eventDate:params.eventDate,
+			       eventVenue:params.eventVenue,
+                               eventDescription:params.eventDescription
                                )
      new_event.save()
    }

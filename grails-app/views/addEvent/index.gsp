@@ -7,8 +7,9 @@
         <body>
 	<form>
 	Event Name: <input type="text" name="eventName" value = "${params.eventName}"/><br/>
-	Event Genre: <input type="text" name="eventGenre" value = "${params.eventGenre}"/><br/>
+        Event Date: <input type="date" name="eventDate" value = "${params.eventDate}"/><br/>
 	Event Venue: <input type="text" name="eventVenue" value = "${params.eventVenue}"/><br/>
+        Event Description: <input type="text" name="eventDescription" value = "${params.eventDescription}"/><br/>
 	<input type = "submit"/>
 	</form>
            
