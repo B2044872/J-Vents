@@ -9,6 +9,12 @@ class AddEventController {
 			       eventVenue:params.eventVenue,
                                eventDescription:params.eventDescription
                                )
-     new_event.save()
+new_event.save()
+
+params.list("genre").each{
+def new_eventGenre = new EventGenre(event:new_event,genre:Genre.get(it))
+new_eventGenre.save()
+}
+     
    }
 }

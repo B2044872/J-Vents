@@ -64,7 +64,7 @@
 					<span id="genres-label" class="property-label"><g:message code="event.genres.label" default="Genres" /></span>
 					
 						<g:each in="${eventInstance.genres}" var="g">
-						<span class="property-value" aria-labelledby="genres-label"><g:link controller="eventGenre" action="show" id="${g.id}">${g?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="genres-label"><g:link controller="eventGenre" action="show" id="${g.id}">${g.genre.name}</g:link></span>
 						</g:each>
 					
 				</li>
